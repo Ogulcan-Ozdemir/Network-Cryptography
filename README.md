@@ -6,4 +6,4 @@ Prerequisite for scripts:
   You should install sagemath 7.3 and run this scripts in sage terminal type: load('dsa.sage') or load('rsa.sage')
 <br>For Simple_Des.py:
    Python 3.5 modules tkinter, os, collections, random, base64 should be installed before run it.Follow instructions throught terminal.<br>
- SNMp.py under development this will not work properly
+ SNMp.py under development this may not work properly
