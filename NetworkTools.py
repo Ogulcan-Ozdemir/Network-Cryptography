@@ -106,8 +106,7 @@ class NetworkUtils:
             i += 1
         print("Syn flood end")
 
-
-if __name__ == '__main__':
+def main(): 
     nm = NetworkUtils()
     x, y, z = "", "", ""
     print("Welcome to crpyo_hw3")
@@ -154,3 +153,11 @@ if __name__ == '__main__':
         elif x == "exit":
             sys.exit()
         print("---------------------------------------------------")
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception as e:
+        print("Error occured while executing simple_des reason is {}".format(e))
+        pass

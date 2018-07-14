@@ -74,24 +74,30 @@ def verify():
     v=float((((g ^ u1)*(y ^ u2)) % p) % q)
     print "Verifying ", v==r
 
+def main() : 
+    i=""#just for loop work properly
+    while i!="exit":
+        print "--------------------------------"
+        print "DSA"
+        print "1-generate public key components"
+        print "2-Sign document"
+        print "3-Verify document"
+        print "4-exit terminate program"
+        i=raw_input()
+        print "--------------------------------"
 
-i=""#just for loop work properly
-while i!="exit":
-   print "--------------------------------"
-   print "DSA"
-   print "1-generate public key components"
-   print "2-Sign document"
-   print "3-Verify document"
-   print "4-exit terminate program"
-   i=raw_input()
-   print "--------------------------------"
+        if i=="1":
+            public_key()
+        elif i=="2":
+            sign()
+        elif i=="3":
+            verify()
+        elif i=="4":
+            i="exit"
 
-   if i=="1":
-       flag=true
-       public_key()
-   elif i=="2":
-       sign()
-   elif i=="3":
-       verify()
-   elif i=="4":
-       i="exit"
+ if __name__ == '__main__': 
+    try:
+        main()
+    except Exception as e:
+        print("Error occured while executing reason is {}".format(e))
+           
